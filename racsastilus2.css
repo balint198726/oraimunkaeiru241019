@@ -1,0 +1,68 @@
+nav{
+    grid-area: me1;
+    padding-left: 10px;
+    border-top: groove;
+    border-right: groove;
+}
+
+#baltartalom1{
+    grid-area: ba1;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-style: dashed;
+    text-align: center;
+}
+
+main{
+    grid-area:fo1;
+    text-align: center;
+    border-top: double;
+    border-bottom: double;
+    border-right: groove;
+}
+
+#jobbtartalom1{
+    grid-area: jo1;
+    border-top:groove;
+    border-right: groove;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#keszito1{
+    grid-area: ke1;
+    text-align: right;
+    padding-right: 10px;
+    border-bottom:groove;
+    border-right: groove;
+    border-left: groove;
+}
+
+#osztaly1{
+    grid-area: o1;
+    text-align: center;
+    border-bottom:groove;
+    border-right: groove;
+}
+
+footer{
+    grid-area: el;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom:groove;
+    border-right: groove;
+    border-left: groove;
+}
+
+#tartalom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'ba1 me1 jo1'
+    'ba1 fo1 fo1'
+    'ba1 fo1 fo1'
+    'ke1 ke1 o1'
+    'el el el'
+    ;
+}
